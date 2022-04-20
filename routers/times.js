@@ -53,7 +53,7 @@ router.get('/', (req, resp) => {
             },
             {
                 "estado": "sp",
-                "time": "Corinthians",
+                "time": "Corinthian",
                 "sigla": "COR",
                 "url" : "https://upload.wikimedia.org/wikipedia/pt/b/b4/Corinthians_simbolo.png"
 
