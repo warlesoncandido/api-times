@@ -18,6 +18,10 @@ router.get('/',(req,resp)=>{
             {
                 "uf": "mg",
                 "nome": "Minas Gerais"
+            },
+            {
+                "uf": "rs",
+                "nome": "Rio Grande do Sul"
             }
             ]);
     }catch (e){
