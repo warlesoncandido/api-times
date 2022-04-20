@@ -5,25 +5,23 @@ const router = express.Router();
 router.get('/',(req,resp)=>{
     try{
         resp.header = {'Content-Type': 'application/json'};
-        resp.statusCode = 200;
-        resp.json([
-            {
-                "uf": "sp",
-                "nome": "São Paulo"
-            },
-            {
-                "uf": "rj",
-                "nome": "Rio de Janeiro"
-            },
-            {
-                "uf": "mg",
-                "nome": "Minas Gerais"
-            },
-            {
-                "uf": "rs",
-                "nome": "Rio Grande do Sul"
-            }
-            ]);
+        resp.status(500).json("Deu ruim");
+        // resp.statusCode = 200;
+        // resp.json([
+        //     {
+        //         "uf": "sp",
+        //         "nome": "São Paulo"
+        //     },
+        //     {
+        //         "uf": "rj",
+        //         "nome": "Rio de Janeiro"
+        //     },
+        //     {
+        //         "uf": "mg",
+        //         "nome": "Minas Gerais"
+        //     }
+           
+        //     ]);
     }catch (e){
         resp.statusCode = 500;
     }
